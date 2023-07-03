@@ -23,7 +23,7 @@ public class Main {
     public static void task2() {
         System.out.println("Задача 2");
         int num = 10;
-        for (int i = 10; i > 0; i--) {
+        for (int i = num; i > 0; i--) {
             System.out.println(i);
         }
     }
@@ -100,7 +100,7 @@ public class Main {
         int months = 12;
         double percentMonth = 1.0 + percent / months;
         for (int i = 1; i <= months; i++) {
-            total = (double)((int)((total + contribution) * percentMonth * 100)) / 100;
+            total = (total + contribution) * percentMonth;
             System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
         }
     }
